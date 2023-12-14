@@ -3,9 +3,9 @@ FROM node:19-alpine
 ENV MONGO_DB_USERNAME=admin \
     MONGO_DB_PWD=password 
 
-WORKDIR /app
+WORKDIR /home/app
 
-COPY . /app/
+COPY ./app /home/app
 
 RUN npm install
 
